@@ -21,7 +21,7 @@ export default function Home(){
                     <a className="navSecaoOpcao" href="">Contato</a>
                 </div>
 
-                <Buttton cor="primeiro" title="Login" onClick={() => {
+                <Buttton modeloButton="primeiro" title="Login" onClick={() => {
                         navigation('/login')
                     }} />
             </Nav>

@@ -2,16 +2,16 @@ import styled from "styled-components";
 
 export const Buttonnav = styled.button`
     background-color: ${props => 
-       props.cor === 'primeiro'
+       props.modeloButton === 'primeiro'
        ? "#C00044" :
-       props.cor === 'segundo'
+       props.modeloButton === 'segundo'
        ? "rgba(0,0,0 0.3)" : 
        "#C00044"
     };
     color: ${props =>
-        props.cor === 'primeiro'
+        props.modeloButton === 'primeiro'
         ? "#ffffff":
-        props.cor === 'segundo'
+        props.modeloButton === 'segundo'
         ? "#C00044" :
         "#ffffff"
     };
