@@ -1,31 +1,25 @@
-import { useNavigate, Link } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 
-import Buttton from "../../componentes/button"
-
-import Logo from "../../assets/sr-logo.png"
-import { Nav } from "./style"
+import { Navbar } from "../../componentes/navbar";
+import { HomeContainer } from './style'
+import { Button } from "../../componentes/button";
 
 export default function Home(){
-    const navigation = useNavigate()
+    const navigation = useNavigate();
+
+    function onLoginClick() {
+        navigation('/login')
+    }
 
     return(
-        <>
-            <Nav className="navHome">
-                <img className="logoNav" src={Logo} alt="" />
-
-                <div className="navSecao">        
-                    <a className="navSecaoOpcao" href="" onClick={() => {
-                        navigation('/')
-                    }}>Home</a>
-                    <a className="navSecaoOpcao" href="">Produtos</a>
-                    <a className="navSecaoOpcao" href="">Contato</a>
-                </div>
-
-                <Buttton modeloButton="primeiro" title="Login" onClick={() => {
-                        navigation('/login')
-                    }} />
-            </Nav>
-
-        </>
+       <HomeContainer>
+            <Navbar navButton={ 
+                <Button 
+                    cor="primary" 
+                    title="Login" 
+                    onClick={onLoginClick} 
+                />}
+            />
+       </HomeContainer>
     )
 }
