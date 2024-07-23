@@ -5,7 +5,7 @@ import { HomeContainer } from './style'
 import { Button } from "../../componentes/button";
 import LogoSugar from "../../assets/Sugar Rush.png"
 import LogoDonuts from "../../assets/Donuts.png"
-
+import Onda from "../../assets/wave 2.png"
 
 
 export default function Home(){
@@ -38,7 +38,20 @@ export default function Home(){
                         /> 
                     </DonutSection>
 
+
                 </Secao>
+
+                <img src={Onda} alt="" />
+
+                <h2>Sobre nós</h2>
+
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                
+                <button>Saiba mais </button>
+
        </HomeContainer>
 
        
