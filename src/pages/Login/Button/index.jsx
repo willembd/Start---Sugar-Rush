@@ -1,4 +1,4 @@
-import { Buttonnav } from "./Style"
+import { Buttonnav } from "./Estilos"
 
 export function Button({cor, title, ...rest}){
     return(
