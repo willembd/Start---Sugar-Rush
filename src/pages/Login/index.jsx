@@ -3,14 +3,21 @@ import { useNavigate } from "react-router-dom"
 import Imagem from "../../assets/img/Fundo"
 import { LoginBody, LoginMain, LoginElemento } from "./Style"
 import { Navbar } from "../../componentes/navbar"
-import { ButtonnavLogin } from "./Button/Estilos"
+import { Button } from "../../componentes/button";
+
 export default function Login(){
     return(
 
+        
+        
         <LoginBody>
-            <Navbar/>
-            <ButtonnavLogin>Cadastro</ButtonnavLogin>
-            
+            <Navbar navButton={ 
+                <Button 
+                    cor="secondary" 
+                    title="Cadastro" 
+                     
+                />}
+            />
             <LoginMain>
 
                     <Imagem/>
@@ -26,7 +33,7 @@ export default function Login(){
                 
             </LoginMain>
         </LoginBody>
-       
+    
     )   
 }
 

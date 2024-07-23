@@ -9,7 +9,7 @@ export const LoginMain = styled.body`
     flex-direction: column;
     align-items: flex-end;
   `
-export const LoginElemento = styled.body`
+export const LoginElemento = styled.main`
     width: 464px;
     height: 576px;
     background-color: rgba(255,255,255,0.8);
