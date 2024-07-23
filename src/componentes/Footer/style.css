@@ -1,0 +1,11 @@
+div.footer{
+    height: 150px;
+    background-color: black;
+    position: relative;
+    top: -100px;
+}
+
+div.mainfooter{
+    height: 150px;
+    background-color: black
+}
