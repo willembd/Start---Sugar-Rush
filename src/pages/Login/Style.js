@@ -20,7 +20,15 @@ export const LoginElemento = styled.main`
     top: 170px;
     opacity: 0.8;
 `
-export const Container = styled.main`
+export const Container = styled.h1`
+    font-family: "Comfortaa", sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 0 0 70px 0;
+    font-size: 24px;
+    font-weight: bold;
+    
 `
+
 
 
